@@ -1,0 +1,15 @@
+This folder holds the code files for direct deployment on AWS Cloud as Stepfunction workflow.
+The workflow is run on us-east-1 since there we can build on already defined lambda layers for scikit learn and pandas, numpy.
+
+For implementation one needs to setup a few things:
+1. Create S3 bucket with the name referenced in the scripts.
+2. Create IAM role that allows Lambdas to access the bucket and to interact with StepFunction.
+3. Create a serverless role for StepFunction to orchestrate Lambdas.
+
+
+4. Set up the AWS region to us-east-1.
+5. Insert the Layers defined in the layers file for the respective function to be able to load pandas and sklearn.
+6. Increase memory and timeouts for data processing / tuning functions.
+
+Note that each lambda function needs to be defined manually through the AWS Lambda interface.
+Similarly, the stepfunction orchestration is defined via AWS interface. The orchestrate file in this folder is an example on how the workflow was defined for the use case depicted in the thesis.

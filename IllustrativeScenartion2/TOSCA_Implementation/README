@@ -1,0 +1,11 @@
+The CSAR contains the defined service template that corresponds to use case 2 
+of the BPMN4sML workflow described in the thesis.
+
+Prior to deployment via xOpera, aws needs to be locally configured, i.e. run aws configure in terminal.
+Make sure to set the region to us-east-1.
+
+Hope for the best that Ansible gets the config right. 
+(Currently not working due to Lambda states that are not covered by AWS TOSCA Node Types and Ansible roles.)
+A quick fix is possible to add TOSCA node type configuration and issue wait calls, but this is not working perfectly.
+
+The function orchestration instructions are very buggy as TOSCA Relationship Type AwsOrchstrated rune pre_configure_source operations to replace ARNs by regex - so if strings don't match the entire thing fails. 
