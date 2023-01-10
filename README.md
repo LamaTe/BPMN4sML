@@ -1,7 +1,7 @@
 # BPMN4sML
 
 This repository holds data, code and artefacts for the BPMN extension BPMN4sML (Business Process Model and Notation for serverless Machine Learning).
-The specification document and guide for BPMN4sML is represented by the thesis, submitted for the partial fulfillment of the Master Data Science and Entrepreneurship at the Jheronimus Academy of Data Science (JADS).
+The specification document and guide for BPMN4sML is represented by the thesis.
 
 * The BPMN4sML metamodels are available as png and XML files in the _Extension_ directory.
 * The BPMN4sML notation prototype is available as a xml file to be loaded into draw.io.
